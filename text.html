@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Text T.K. | Drive With T.K.</title>
+<style>
+body{margin:0;background:#0d0f12;color:#f6f4ef;font:20px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center;padding:20px}
+a{display:block;margin:14px auto;max-width:420px;min-height:62px;line-height:62px;border-radius:12px;font-weight:900;font-size:22px;text-decoration:none}
+.go{background:#ffc42e;color:#1a1405}.alt{border:3px solid #ffc42e;color:#ffc42e}
+</style>
+</head>
+<body>
+<main>
+<h1 style="margin:0 0 6px">Text T.K.</h1>
+<p style="margin:0 0 10px">Send "APP" and T.K. texts you the application.</p>
+<a class="go" id="go" href="sms:+14437412202?&amp;body=APP">Open my texts</a>
+<a class="alt" href="tel:+14437412202">Or call 443.741.2202</a>
+<a class="alt" href="/">Back to DriveWithTK.com</a>
+</main>
+<script>
+// Phones open the messages app straight away; desktops stay on this page and see the number.
+if (/Android|iPhone|iPad/i.test(navigator.userAgent)) location.href = document.getElementById('go').href;
+</script>
+</body>
+</html>
